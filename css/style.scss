@@ -1,0 +1,51 @@
+$Dark-cyan: hsl(185, 75%, 39%);
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$Dark-grayish-blue: hsl(227, 10%, 46%);
+$Dark-gray: hsl(0, 0%, 59%);
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: $Dark-cyan;
+}
+
+.Container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card {
+    background-color: white;
+    width: 326px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.309);
+    &__Header {
+        width: 100%;
+        display: block;
+    }
+    &__Body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &-img {
+            border: 6px solid white;
+            border-radius: 50%;
+            margin-top: calc(-48px - 5px);
+            background-color: white;
+        }
+    }
+}
+
+
