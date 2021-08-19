@@ -15,6 +15,9 @@ html {
 body {
     font-family: 'Kumbh Sans', sans-serif;
     background-color: $Dark-cyan;
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
 .Container {
@@ -27,7 +30,7 @@ body {
 
 .Card {
     background-color: white;
-    width: 326px;
+    width: 400px;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.309);
@@ -39,11 +42,40 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
+        border-bottom: 1px solid rgba(153, 153, 153, 0.35);
         &-img {
             border: 6px solid white;
             border-radius: 50%;
             margin-top: calc(-48px - 5px);
             background-color: white;
+        }
+        &-title {
+            margin-top: 2rem;
+            font-size: 1.8rem;
+            span {
+                color: $Dark-gray;
+                font-weight: 400;
+            }
+        }
+        &-text {
+            color: $Dark-gray;
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+    }
+    &__Footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &-social {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 2rem 0;
+            p {
+                color: $Dark-gray;
+                letter-spacing: 1px;
+            }
         }
     }
 }
